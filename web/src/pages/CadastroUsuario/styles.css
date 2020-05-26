@@ -1,0 +1,29 @@
+.titulos{
+    margin-bottom: 20px;
+}
+
+.input-group{
+    justify-content: space-between;
+    width: 400px;
+}
+
+.input-group-radio{
+    width: 400px;
+}
+
+.ig1{
+    justify-content: space-between;
+}
+
+.input-cadastro-user{
+    height: 30px;
+    width: 300px;
+    border-bottom: solid 1px #1f3bdf;
+}
+
+.btn-cadastro-user{
+    height: 50px;
+    width: 200px;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}

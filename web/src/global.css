@@ -1,0 +1,227 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+input{
+  border: none;
+}
+
+ul{
+  list-style: none;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button{
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+
+/* color-size */
+
+.text-large{
+  font-size: 22px;
+}
+
+.text-middle{
+  font-size: 18px;
+}
+
+.text-small{
+  font-size: 14px;
+}
+
+/* text-color*/
+
+.color-gray{
+  color: #707070;
+}
+
+.color-green{
+  color: #51aa4a;
+}
+
+.color-blue{
+  color: #1f3bdf;
+}
+
+.color-white{
+  color: white;
+}
+
+/* spacing */
+
+.spacing-large{
+
+}
+
+.spacing-small{
+
+}
+
+
+/* display */
+
+.collum{
+  display: flex;
+  flex-direction: column;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* alinhamento */
+.center{
+  display: flex;
+  align-items: center;
+}
+
+.h-center{
+  align-items: center;
+}
+.v-center{
+  justify-content: center;
+}
+.center-self{
+  display: flex;
+  align-self: center;
+}
+
+/* margin */
+
+.mr1{
+  margin-right: 0.5rem;
+}
+
+.mr2{
+  margin-right: 1rem;
+}
+
+.mr3{
+  margin-right: 1.5rem;
+}
+.mr4{
+  margin-right: 2rem;
+}
+.mr5{
+  margin-right: 2.5rem;
+}
+.mr6{
+  margin-right: 3rem;
+}
+
+.ml1{
+  margin-left: 0.5rem;
+}
+
+.ml2{
+  margin-left: 1rem;
+}
+
+.ml3{
+  margin-left: 1.5rem;
+}
+
+.ml4{
+  margin-left: 2rem;
+}
+
+.ml5{
+  margin-left: 2.5rem;
+}
+
+.ml6{
+  margin-left: 3rem;
+}
+
+.ml7{
+  margin-left: 3.5rem;
+}
+
+.mb1{
+  margin-bottom: 0.5rem;
+}
+
+.mb2{
+  margin-bottom: 1rem;
+}
+
+.mb3{
+  margin-bottom: 1.5rem;
+}
+.mb4{
+  margin-bottom: 2rem;
+}
+
+
+/* backgroun-color */
+.b-color-white{
+  background: white;
+}
+.b-color-blue{
+  background: #1f3bdf;
+}
+.b-color-gray{
+  background: #707070;
+}
+.b-color-green{
+  background: #51aa4a;
+}
+
+
+/* section-aside */
+.container-left{
+  background: #cecece;
+  width: 300px;
+  height: 86.9vh;
+}
+
+.card-ul{
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.card-ul ul{
+  display: grid;
+  position: absolute;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2,1fr);
+  gap: 40px;
+  padding: 10px 0 10px 150px;
+}
+
+
+/* tamanho da pagina */
+.tam-header{
+  height: 13vh;
+}
+.tam-page{
+  height: 86.9vh;
+}
+
+/* tamanhos dos buttons */

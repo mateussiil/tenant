@@ -1,0 +1,13 @@
+.header{
+    justify-content: space-between;
+    border-bottom: solid 1px #DCDCDC;
+}
+
+.header img{
+    height: 60px;
+}
+
+.header a{
+    text-decoration: none;
+}
+  

@@ -1,0 +1,29 @@
+.container-cadastro{
+    justify-content: center;
+}
+
+.container-cadastro form{
+    margin-top: 80px;
+}
+
+.btn-cadastro{
+    margin-top: 40px;
+    height: 50px;
+    width: 350px;
+    margin-bottom: 100px;
+}
+
+.container-cadastro textarea{
+    border: none;
+    height: 80px;
+    background: #f0f0f5;
+    box-shadow: 10px 0 100px rgba(0,0,0,0.1); 
+    border: solid 1px #1f3bdf;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 400px;
+}
+
+p{
+    font-size: 18px;
+}

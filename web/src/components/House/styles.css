@@ -1,0 +1,21 @@
+.card{
+    border: solid 1px #1f3bdf;
+    border-radius: 20px;
+    padding: 10px;
+    max-width: 300px;
+}
+
+.card img{
+    border-radius: 20px;
+    height:50%;
+    width:100%;
+    max-height: 250px;
+}
+
+.card-value{
+    margin-left: 20px;
+}
+
+.title{
+    font-size: 2rem;
+}

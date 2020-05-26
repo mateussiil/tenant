@@ -1,0 +1,14 @@
+.card-ul{
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.card-ul ul{
+    display: grid;
+    position: absolute;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 40px;
+    padding: 10px 0 10px 150px;
+}

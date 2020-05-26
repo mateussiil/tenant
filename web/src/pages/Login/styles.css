@@ -1,0 +1,57 @@
+.container-logon{
+    justify-content: space-between;
+}
+
+.container-div{
+    align-content: stretch;    
+}
+
+.container-info{
+    margin-top: 200px;
+    margin-bottom: 90px;
+}
+
+.border-left{
+    height: 27vh;
+    width: 80vh;
+    border-top-left-radius:50%;
+    border-top-right-radius:50%;
+}
+
+.border-right{
+    height: 27vh;
+    width: 80vh;
+    border-bottom-left-radius:50%;
+    border-bottom-right-radius:50%;
+}
+
+.content{
+    width: 600px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.content form{
+    padding: 10px;
+    height: 200px;
+}
+
+.content input{
+    border: solid 1px #1f3bdf;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.content div{  
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-logar{
+    font-weight: bolder;
+    border-radius: 8px;
+    margin-top: 10px;
+    width: 300px;
+    height: 40px;
+}
