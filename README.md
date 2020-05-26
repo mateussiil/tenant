@@ -2,19 +2,16 @@
     <img alt="Tenant" title="#delicinha" src=".github/tenant.svg" width="250px" />
 </h1>
 
-<h4 align="center">
-  🚀 Semana OmniStack 10.0
-</h4>
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Rocketseat/semana-omnistack-10">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/mateussiil/tenant">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Rocketseat/semana-omnistack-10">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/mateussiil/tenant">
   
-  <a href="https://github.com/Rocketseat/semana-omnistack-10/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Rocketseat/semana-omnistack-10">
+  <a href="https://github.com/mateussiil/tenant/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/mateussiil/tenant">
   </a>
 
-  <a href="https://github.com/Rocketseat/semana-omnistack-10/issues">
+  <a href="https://github.com/mateussiil/tenant/issues">
     <img alt="Repository issues" src="https://img.shields.io/github/issues/Rocketseat/semana-omnistack-10">
   </a>
 
@@ -46,13 +43,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O DevRadar é um projeto que visa conectar desenvolvedores próximos a você que trabalham com as mesmas tecnologias.
+O Tenant é um projeto que visa conectar pessoas e queiram partilhar o mesmo espaço para trabalhar ou morar.
 
 ## 🔖 Layout
 
-Você pode baixar o layout do projeto no formato `.sketch` através [desse link](.github/DevRadar.sketch).
-
-Para abrir o arquivo no formato `.sketch` em qualquer sistema operacional utilize a ferramenta [Figma](https://figma.com).
+Para abrir utilize a ferramenta [Figma](https://www.figma.com/file/XtzDDh2oeVZSyCpV8UJMTO/Tenant-web?node-id=0%3A1).
 
 ## 🤔 Como contribuir
 
@@ -69,4 +64,4 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 
 ---
 
-Feito com ♥ by Rocketseat :wave: [Entre na nossa comunidade!](https://discordapp.com/invite/gCRAFhc)
+Feito com ♥ by Mateus Oliveira 
