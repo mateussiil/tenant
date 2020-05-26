@@ -29,7 +29,7 @@
 <br>
 
 <p align="center">
-  <img alt="Frontend" src=".github/devradar.png" width="100%">
+  <img alt="Frontend" src=".github/tenant.png" width="100%">
 </p>
 
 ## :rocket: Tecnologias
