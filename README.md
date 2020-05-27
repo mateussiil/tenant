@@ -45,9 +45,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O Tenant é um projeto que visa conectar pessoas e queiram partilhar o mesmo espaço para trabalhar ou morar.
 
+
+
 ## 🔖 Layout
 
-Para abrir utilize a ferramenta [Figma](https://www.figma.com/file/XtzDDh2oeVZSyCpV8UJMTO/Tenant-web?node-id=0%3A1).
+Para abrir o projeto mobile utilize o  [Figma](https://www.figma.com/proto/2PHmqn85OMAa2BrvgGePrt/Tenant-mobile?node-id=3%3A3&scaling=scale-down).
 
 ## 🤔 Como contribuir
 
