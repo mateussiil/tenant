@@ -1,0 +1,10 @@
+:root{
+    --tam-header:50px;
+
+    --card-tam: 300px;      /**tamanho do card**/
+
+    --white: white;
+    --blue: #1f3bdf;
+    --gray:#707070;
+    --green:#51aa4a;
+}

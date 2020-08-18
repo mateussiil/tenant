@@ -81,27 +81,22 @@ export default function AdicionarFotos(){
     async function handleCreateHouse(e){
         e.preventDefault();
 
-        try{
-            history.push('/profile');
-        }catch(err){
-            console.log(err)
-            // alert('Erro ao cadastrar caso, tente novamente')
-        }
+        history.push('/profile');
     }
     
     return(
         <div>
             <Header />
-            <section className="container-cadastro">
+            <section className="container-cadastro center">
                 <div>
-                    <form required onSubmit={handleCreateHouse}>
+                    <form className="center"required onSubmit={handleCreateHouse}>
                         <div>
                             <Upload onUpload={handleUpload}/>
                             {!!file.length && (
                                 <FileList files={file}/>
                             )}
                         </div>
-                        <button className="btn btn-cadastro" type="submit">Cadastrar</button>
+                        <button className="btn btn-cadastro b-color-blue color-white" type="submit">Cadastrar</button>
                     </form>
                 </div>
             </section>

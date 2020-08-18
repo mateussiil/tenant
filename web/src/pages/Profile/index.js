@@ -50,8 +50,8 @@ export default function Profile(){
         <div>
             <Header/>
             <div className="row tam-page">
-                <aside className="collum container-left">
-                    <div className="container-user">
+                <aside className="collum container-left tam-page">
+                    <div className="container-user ">
                         <h1>Bem vindo, {name}</h1>
                         <button type="button" onClick={() => {}}> 
                             <FiSettings size={20} color="#a8a8b3"/>

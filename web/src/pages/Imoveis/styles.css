@@ -1,14 +1,45 @@
-.container{
-    margin-top: 40px;
-    display: flex;
-    width: 100%;
-    max-width: 1180px;
-    height: 100%;
+@import '../../variables.css';
+
+:root{
+    --tam:40px;
+    --gap:24px;
+    --tam-filtro: calc(var(--card-tam)*3 + var(--gap)*2); /* Tamanho do filtro*/
+}
+
+.filtro-input{
+    width: calc(var(--tam-filtro)/5);
+    height: 50px;
+    margin-left: 10px;
+    border: solid 1px #1f3bdf;
 }
 
 .grid-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 24px;
+    grid-gap: var(--gap);
     list-style: none;
+}
+
+::-webkit-input-placeholder {
+    color: var(--blue);
+    font: 14px verdana, arial, sans-serif;
+    padding: 10px;
+}
+ 
+::-moz-placeholder {
+    color:var(--blue);
+    font: 12px verdana, arial, sans-serif;
+    padding: 10px;
+}
+ 
+::-moz-placeholder {
+    color:var(--blue);  
+    font: 12px verdana, arial, sans-serif;
+    padding: 10px;
+}
+ 
+::-ms-input-placeholder {  
+    color:var(--blue);  
+    font: 12px verdana, arial, sans-serif;
+    padding: 10px;
 }

@@ -1,10 +1,12 @@
+@import "../../variables.css";
+
 .header{
     justify-content: space-between;
     border-bottom: solid 1px #DCDCDC;
 }
 
 .header img{
-    height: 60px;
+    height: calc(var(--tam-header) - 2vh)
 }
 
 .header a{

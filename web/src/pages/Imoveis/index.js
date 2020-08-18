@@ -4,6 +4,7 @@ import {useHistory} from 'react-router-dom';
 import api from '../../services/api';
 import './styles.css'
 import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 import House from '../../components/House';
 
 export default function Imoveis(){
@@ -32,16 +33,46 @@ export default function Imoveis(){
     return(
         <div>
             <Header/>
-            <div className="row tam-page">
-                <aside className="container-left">
-                    <h1>Filtros</h1>
-                </aside>
-                <aside className="card-ul">
+            <div className=" flex collum center mt4">
+                <div className="center v-center mt1 mb2">{city}</div>
+                <div className="filtro" placeholder="Filtro">
+                    <form className="row v-center center mb4">
+                        <div className="">
+                            <input 
+                                className="filtro-input"
+                                list="bairros" 
+                                placeholder="Bairros"
+                                />
+                            <datalist id="bairros">
+                                <option value="Renascença"/>
+                                <option value="Calhau"/>
+                                <option value="Monte Castelo"/>
+                                <option value="Cidade Operaria"/>
+                            </datalist>
+                        </div>
+                        <div className="">
+                            <input 
+                                className="filtro-input"
+                                list="Quartos" 
+                                placeholder="Quartos"
+                                />
+                        </div>
+                        <div className="">
+                            <input 
+                                className="filtro-input"
+                                list="Valores" 
+                                placeholder="Valores"
+                                />
+                        </div>
+              </form>
+                </div>
+                <div className=" row mt4 mb4">
                     <ul className="grid-container">
                         <House data={houses} arquivos={arquivos}/>
                     </ul>
-                </aside>
+                </div>
             </div>
+            <Footer/>
         </div>
     )
 }

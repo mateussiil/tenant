@@ -1,3 +1,5 @@
+@import './variables.css';
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -36,6 +38,10 @@ button{
   cursor: pointer;
   border-radius: 5px;
   font-weight: bolder;
+}
+
+.flex{
+  display: flex;
 }
 
 /* color-size */
@@ -80,16 +86,13 @@ button{
 
 }
 
-
 /* display */
 
 .collum{
-  display: flex;
   flex-direction: column;
 }
 
 .row{
-  display: flex;
   flex-direction: row;
 }
 
@@ -177,19 +180,33 @@ button{
   margin-bottom: 2rem;
 }
 
+.mt1{
+  margin-top: 0.5rem;
+}
+
+.mt2{
+  margin-top: 1rem;
+}
+
+.mt3{
+  margin-top: 1.5rem;
+}
+.mt4{
+  margin-top: 2rem;
+}
 
 /* backgroun-color */
 .b-color-white{
-  background: white;
+  background: var(--white);
 }
 .b-color-blue{
-  background: #1f3bdf;
+  background: var(--blue);
 }
 .b-color-gray{
-  background: #707070;
+  background:  var(--gray);
 }
 .b-color-green{
-  background: #51aa4a;
+  background:  var(--green);
 }
 
 
@@ -218,10 +235,11 @@ button{
 
 /* tamanho da pagina */
 .tam-header{
-  height: 13vh;
+  height: var(--tam-header)
 }
+
 .tam-page{
-  height: 86.9vh;
+  height: calc(100vh - var(--tam-header))
 }
 
 /* tamanhos dos buttons */

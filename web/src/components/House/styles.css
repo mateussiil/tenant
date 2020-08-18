@@ -1,15 +1,15 @@
+@import '../../variables.css';
+
 .card{
     border: solid 1px #1f3bdf;
     border-radius: 20px;
     padding: 10px;
-    max-width: 300px;
+    width: var(--card-tam);
 }
 
 .card img{
     border-radius: 20px;
-    height:50%;
-    width:100%;
-    max-height: 250px;
+    height: calc(var(--card-tam) - 50px);
 }
 
 .card-value{

@@ -45,7 +45,7 @@ export default function House({data, arquivos}){
     return(
             houses.map(house=>(
                 <li key={house.id}>
-                    <div className="card collum">
+                    <div className="flex card collum">
                         <p>{house.id}</p>
                         <img 
                             className="mb2"
@@ -54,7 +54,6 @@ export default function House({data, arquivos}){
                             />
                             <br></br
                             >
-                        
                         { (history.location.pathname==="/profile") ? 
                             <div className="row mb2">
                                 <button type="button" onClick={() => handleDeleteHouse(house.id)}> 
