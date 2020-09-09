@@ -1,15 +1,17 @@
 import React from 'react';
 import Dropzone from 'react-dropzone';
 
+import './styles.css';
+
 export default function Upload({ onUpload }){
     function renderDragMessage(isDragReject, isDragActive){
         if(!isDragActive){
-            return <p className="default-message comum">Arraste suas imagens aqui, ou click para selecionar</p>
+            return <p className="comum default">Arraste suas imagens aqui, ou click para selecionar</p>
         }
         if(isDragReject){
-            return <p className="error-message comum">Arquivo não suportado</p>
+            return <p className="comum err">Arquivo não suportado</p>
         }
-        return <p className="sucess-message comum">Solte os arquivos aqui</p>
+        return <p className="comum sucess">Solte os arquivos aqui</p>
     }
     
     return(

@@ -1,0 +1,26 @@
+/* Estilização das mensagens no drag component */
+.comum{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.default{
+    color: #999999;
+    border: dashed 2px #999999;
+}
+
+.err{
+    color: #e57878;
+    border: dashed 2px #e57878;
+
+}
+
+.sucess{
+    color:#1f3bdf;
+    border: dashed 2px #1f3bdf;
+}

@@ -9,7 +9,7 @@ import FileList from '../../components/FileList';
 
 import api from '../../services/api';
 
-import './styles.css';
+// import './styles.css';
 
 export default function AdicionarFotos(){
     const [ file, setFile ] = useState([]);
@@ -89,7 +89,7 @@ export default function AdicionarFotos(){
             <Header />
             <section className="container-cadastro center">
                 <div>
-                    <form className="center"required onSubmit={handleCreateHouse}>
+                    <form className="center" required onSubmit={handleCreateHouse}>
                         <div>
                             <Upload onUpload={handleUpload}/>
                             {!!file.length && (
