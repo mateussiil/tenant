@@ -52,7 +52,7 @@ export default function Cadastro(){
     return(
         <div>
             <Header/>
-            <div className="collum h-center">
+            <div className="collum h-center center">
                 <div className="titulos color-gray text-large">
                     <h2>Nos conte um pouco sobre você</h2>
                 </div>
