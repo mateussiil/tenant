@@ -1,9 +1,6 @@
-import React, { useEffect, ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 import { useHistory, Link } from 'react-router-dom';
 import logo from 'src/utils/images/logo.svg';
-
-
-import api from '../../services/api';
 
 import auth from '../../auth';
 
@@ -14,7 +11,7 @@ interface Props {
     children: ReactNode;
 }
 
-const Header = () => {
+export const Header = () => {
     const history = useHistory();
 
     function handleLogout(){
