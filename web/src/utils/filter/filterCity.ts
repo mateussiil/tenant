@@ -1,12 +1,16 @@
-interface City{
-    city: string
+interface IHouses {
+    place: string;
+    price: Number;
 }
 
-export const filterCity = (data: City[] ) => {
+// Filtrar casas da cidade
+
+
+export const filterCity = (city: IHouses[] ) => {
     let filtrados = [];
-    for(let i=0; i<data.length; i++){
-        if(filtrados.indexOf(data[i].city)===-1){
-            filtrados.push(data[i].city)
+    for(let i=0; i<city.length; i++){
+        if(filtrados.indexOf(city[i].place)===-1){
+            filtrados.push(city[i].place)
         }
     }
     return filtrados;

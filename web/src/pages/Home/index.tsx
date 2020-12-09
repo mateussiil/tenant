@@ -2,26 +2,27 @@ import React, { useState, useEffect } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import api from '../../services/api';
 
-import Header from '../../components/Header';
+import { Header } from '../../components/Header';
 
-import filterCity from '../../utils/filter/filterCity';
-import filterPrice from '../../utils/filter/filterPrice';
+import { filterCity } from '../../utils/filter/filterCity';
 
-interface Iimoveis {
+import { filterPrice } from '../../utils/filter/filterPrice';
+
+interface IHouses {
     place: string;
-    price: string;
+    price: Number;
 }
 
-const Home = () =>{
+export const Home = () =>{
     const history = useHistory();
 
-    const [houses, setHouses ] = useState<Iimoveis[]>([]);
-    const [ city, setCity ] = useState('');
+    const [ houses, setHouses ] = useState<IHouses[]>([]);
+    const [ city, setCity ] = useState<string>("");
     const [ uf, setUf ] = useState('');
-    const [ price, setPrice ] = useState('');
+    const [ price, setPrice ] = useState<string>("");
     const [ qtdQuartos, setQtdQuartos ] = useState('');
 
-    const handleForm = (e) => {
+    const handleForm = (e: any) => {
         e.preventDefault();
 
         localStorage.setItem('city', city)
@@ -33,7 +34,7 @@ const Home = () =>{
     }
 
     useEffect(()=>{
-        api.get<Iimoveis[]>('imoveis').then(response => {
+        api.get<IHouses[]>('imoveis').then(response => {
             setHouses(response.data)
         })
       },[city,uf]);
@@ -65,7 +66,7 @@ const Home = () =>{
                         />
                         <datalist id="cidades">
                         {
-                            filterCity(houses).map(response=>(
+                            filterCity(houses).map( response =>(
                             <option>{response}</option>
                             ))
                         }
@@ -105,7 +106,7 @@ const Home = () =>{
                         <datalist id="valores">
                             {
                             (city) ?
-                                filterPrice(houses).map(response=>(
+                                filterPrice(houses).map( response =>(
                                 <option>{response}</option>
                                 ))
                                 : <option></option>

@@ -9356,6 +9356,11 @@
     "ansi-styles" "^4.0.0"
     "react-is" "^17.0.1"
 
+"primeflex@^2.0.0":
+  "integrity" "sha512-t6AG3iRI1rh04uI+9nC4JSlbKfA8PnpRDFtjyqi3rDSLRgdfOuhIiunJbjVQ4alnnCfuQAAbVyde1AKN9QxT/w=="
+  "resolved" "https://registry.npmjs.org/primeflex/-/primeflex-2.0.0.tgz"
+  "version" "2.0.0"
+
 "primereact@^5.0.2":
   "integrity" "sha512-CaseS/951XkHYuQ5flQg9gZn4TFJSlSMriLdbpub4wzMjHZPbVK0P5I4g/1d24KKT3ptCOwxrsvwus5B+UdhqA=="
   "resolved" "https://registry.npmjs.org/primereact/-/primereact-5.0.2.tgz"

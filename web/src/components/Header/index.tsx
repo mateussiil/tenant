@@ -6,11 +6,6 @@ import auth from '../../auth';
 
 import './styles.css';
 
-interface Props {
-    to: string;
-    children: ReactNode;
-}
-
 export const Header = () => {
     const history = useHistory();
 
@@ -29,7 +24,7 @@ export const Header = () => {
                 <img src={logo} alt="house" />
             </button>
             <div className="mr2">
-                <Link className="color-white mr3" to=""> Sobre Nós</Link>
+                <Link className="color-white mr3" to=""> Sobre Nós </Link>
             {
                 auth.isAuthenticated() ? //usuario está logado?
                 (history.location.pathname==='/profile') ? //usuario esta na aba profile?
