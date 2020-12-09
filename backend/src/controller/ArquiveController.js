@@ -25,8 +25,8 @@ module.exports = {
         data = {
             name,
             size,
-            key:idHouse+'-'+idProp,
-            url,
+            key:key || idHouse+'-'+idProp,
+            url: url|| "local",
             id_prop: idProp,
             id_house: idHouse
         }
