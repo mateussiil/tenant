@@ -15,7 +15,7 @@ module.exports = {
 
     async store(request, response){
         const { originalname: name, size, key, location:url } = request.file;
-
+        console.log(request.file)
         const id_prop = request.headers.authorization;
         const { id_house } = request.query;
 
@@ -25,7 +25,7 @@ module.exports = {
         data = {
             name,
             size,
-            key,
+            key:idHouse+'-'+idProp,
             url,
             id_prop: idProp,
             id_house: idHouse
