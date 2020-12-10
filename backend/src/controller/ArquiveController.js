@@ -14,19 +14,18 @@ module.exports = {
     },
 
     async store(request, response){
-        const { originalname: name, size, key, location:url } = request.file;
+        const { originalname: name, size, key, location:url, path } = request.file;
         console.log(request.file)
         const id_prop = request.headers.authorization;
         const { id_house } = request.query;
 
         const idProp = Number(id_prop)
         const idHouse = Number(id_house)
-
         data = {
             name,
             size,
             key:key || idHouse+'-'+idProp,
-            url: url|| "local",
+            url: url|| path,
             id_prop: idProp,
             id_house: idHouse
         }
