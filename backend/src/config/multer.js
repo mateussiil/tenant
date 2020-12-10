@@ -10,13 +10,12 @@ const storageTypes = {
       cb(null, path.resolve(__dirname, "..", "..", "tmp", "uploads"));
     },
     filename: (req, file, cb) => {
-      crypto.randomBytes(16, (err, hash) => {
-        if (err) cb(err);
-
+      // crypto.randomBytes(16, (err, hash) => {
+      //   if (err) cb(err);
+      // });
         file.key = `${hash.toString("hex")}-${file.originalname}`;
-
-        cb(null, file.key);
-      });
+        const ext = file.mimetype.split('/')[1];
+        cb(null, `${file.originalname}.${ext}`);
     }
   }),
   s3: multerS3({
