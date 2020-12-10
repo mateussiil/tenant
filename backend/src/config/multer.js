@@ -10,11 +10,12 @@ const storageTypes = {
       cb(null, path.resolve(__dirname, "..", "..", "tmp", "uploads"));
     },
     filename: (req, file, cb) => {
+      console.log('multer', file)
       // crypto.randomBytes(16, (err, hash) => {
       //   if (err) cb(err);
       //  file.key = `${hash.toString("hex")}-${file.originalname}`;
       // });
-        const ext = file.mimetype.split('/')[1];
+        // const ext = file.mimetype.split('/')[1];
         cb(null, file.originalname);
     },
   }),
