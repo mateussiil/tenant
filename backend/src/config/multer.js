@@ -12,11 +12,11 @@ const storageTypes = {
     filename: (req, file, cb) => {
       // crypto.randomBytes(16, (err, hash) => {
       //   if (err) cb(err);
+      //  file.key = `${hash.toString("hex")}-${file.originalname}`;
       // });
-        file.key = `${hash.toString("hex")}-${file.originalname}`;
         const ext = file.mimetype.split('/')[1];
-        cb(null, `${file.originalname}.${ext}`);
-    }
+        cb(null, file.originalname);
+    },
   }),
   s3: multerS3({
     s3: new aws.S3(),
