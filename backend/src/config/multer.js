@@ -16,7 +16,9 @@ const storageTypes = {
       //  file.key = `${hash.toString("hex")}-${file.originalname}`;
       // });
         // const ext = file.mimetype.split('/')[1];
-        cb(null, file.originalname);
+
+
+      cb(null, file.originalname);
     },
   }),
   s3: multerS3({
